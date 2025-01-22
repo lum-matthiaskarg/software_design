@@ -47,6 +47,7 @@ Imagine half a year later, we need a serialize function...
 ![alt text](./assets/variant_visitor.png)
 
 ## pros: 
+- add new operations easily (ocp)
 - no cyclic dependency
 - no Shape baseclass
 - value types - no pointers
