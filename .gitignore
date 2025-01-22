@@ -1,8 +1,8 @@
+.vscode
 bazel-bin
-bazel-catch2
 bazel-out
 bazel-testlogs
-bazel-0_object_oriented_approach
+bazel-*
 MODULE.bazel
 MODULE.bazel.lock
 .vscode/settings.json
