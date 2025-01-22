@@ -8,7 +8,7 @@ void DrawOpenGL::visit(const Circle& circle) const
 }
 
 
-void DrawOpenGL::visit(const Square& circle) const
+void DrawOpenGL::visit(const Square& square) const
 {
     std::cout << "DrawOpenGL: Draw a square" << std::endl;
 }
@@ -20,7 +20,7 @@ void DrawImGui::visit(const Circle& circle) const
 }
 
 
-void DrawImGui::visit(const Square& circle) const
+void DrawImGui::visit(const Square& square) const
 {
     std::cout << "DrawImGui: Draw a square" << std::endl;
 }

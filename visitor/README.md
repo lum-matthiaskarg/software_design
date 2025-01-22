@@ -12,7 +12,7 @@ bazel run //:object_oriented_approach
 
 ## good software design?
 Imagine half a year later, we need a serialize function...
-![alt text](./0_object_oriented_approach/assets/image.png)
+![alt text](./assets/object_oriented_approach.png)
 
 
 ## cons:
@@ -28,16 +28,21 @@ Imagine half a year later, we need a serialize function...
 
 ## Solution - classic visitor 
 
+![alt text](./assets/classic_visitor.png)
+
 # pros
 - add new operations easily (ocp)
-- 
 
 # cons 
 - adding a new Serialize class - you have to implement it for all types
 - what about return types - store it in the class and access it later
 - adding new types - implement all operations for all ShapeVisitors
-- cyclic dependency
+- cyclic dependency - forward declaration
 - resolve 2 virtual functions - decrease performance
+
+
+## Solution - std::variant c++17
+
 
 
   
