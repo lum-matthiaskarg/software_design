@@ -1,10 +1,12 @@
-# object oriented approach
-
-## build and run:
+# Build and Run
 ```bash
+cd {project}
 bazel run //:object_oriented_approach
+bazel run //:classic_visitor
+bazel run //:variant_visitor 
 ```
 
+# object oriented approach
 
 ## pros:
 - you can easily add new types without recompiling existing code
@@ -26,8 +28,7 @@ Imagine half a year later, we need a serialize function...
 - Prefer a procedural / functional solution when you primarily want to add operations
 
 
-## Solution - classic visitor 
-
+# Solution - classic visitor 
 ![alt text](./assets/classic_visitor.png)
 
 # pros
@@ -41,9 +42,22 @@ Imagine half a year later, we need a serialize function...
 - resolve 2 virtual functions - decrease performance
 
 
-## Solution - std::variant c++17
+# Solution - std::variant c++17
+
+![alt text](./assets/variant_visitor.png)
+
+## pros: 
+- no cyclic dependency
+- no Shape baseclass
+- value types - no pointers
+
+## cons:
+- adding new types - implement all operations for all ShapeVisitors
 
 
+
+# Performance:
+![alt text](./assets/performance.png)
 
   
 

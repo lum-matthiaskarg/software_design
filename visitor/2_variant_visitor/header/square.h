@@ -1,12 +1,11 @@
 #pragma once
 
-#include "shape.h"
 #include "point.h"
 
-class Square : public Shape
+class Square 
 {
     public:
-    Square(const Point& center , double side)
+    Square(const Point& center, double side)
       : center_{center}
       , side_{side}
     {}
@@ -19,11 +18,6 @@ class Square : public Shape
     Point center() const 
     {
         return center_;
-    }
-
-    void accept(const ShapeVisitor& visitor ) override
-    {
-        visitor.visit(*this);
     }
     
     private:

@@ -7,8 +7,8 @@
 class Circle : public Shape
 {
     public:
-    Circle(Point center, double radius )
-      : center_{std::move(center)}
+    Circle(const Point& center, double radius )
+      : center_{center}
       , radius_{radius}
     {}
 

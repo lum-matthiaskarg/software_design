@@ -7,8 +7,8 @@
 class Square : public Shape
 {
     public:
-    Square(Point center, double side)
-      : center_{std::move(center)}
+    Square(const Point& center , double side)
+      : center_{center}
       , side_{side}
     {}
 
